@@ -34,7 +34,7 @@ class MusicList extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8,),
+            SizedBox(height: 8),
             Expanded(
               child: Padding(
                 padding: EdgeInsets.only(left: 8, right: 8),
@@ -99,7 +99,7 @@ class MusicList extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8,),
+            SizedBox(height: 8),
             Expanded(
               child: Padding(
                 padding: EdgeInsets.only(left: 8, right: 8),
@@ -108,7 +108,7 @@ class MusicList extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 8,),
+            SizedBox(height: 8),
             Expanded(
               child: Padding(
                 padding: EdgeInsets.only(left: 8, right: 8, bottom: 8),
