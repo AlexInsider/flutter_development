@@ -9,86 +9,110 @@ class MusicList extends StatelessWidget {
       appBar: AppBar(
         title: Text("Music List"),
         actions: [
-          IconButton(
-            icon: Icon(Icons.person),
-            color: Colors.white,
-            style: IconButton.styleFrom(
-              backgroundColor: Colors.black,
-            ),
-            onPressed:(){},
-          )
+          Icon(
+            Icons.person,
+            size: 32,
+          ),
         ],
         actionsPadding: EdgeInsets.only(right: 8),
       ),
       body: Center(
-        child: Column(
-          children: [
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(left: 8, right: 8),
+        child: Padding(
+          padding: EdgeInsets.only(left: 8, right: 8, bottom: 8),
+          child: Column(
+            children: [
+              Expanded(
                 child: Container(
-                  decoration: BoxDecoration(border: Border.all(width: 2)),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
+                    ),
+                  ),
                   child: Center(
-                    child: Text("Top 1 Song", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                    child: Text(
+                      "Top 1 Song",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(height: 8),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(left: 8, right: 8),
+              SizedBox(height: 8),
+              Expanded(
                 child: Container(
-                  decoration: BoxDecoration(border: Border.all(width: 2)),
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
+                    ),
+                  ),
                   child: Row(
                     children: [
                       Expanded(
-                        child: Padding(
-                          padding: EdgeInsetsGeometry.all(4),
-                          child: Container(
-                            width: double.infinity,
-                            height: double.infinity,
-                            decoration: BoxDecoration(border: Border.all(width: 2)),
-                              child: Text(
-                                "Top 2",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                              ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
                             ),
                           ),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Padding(
-                          padding: EdgeInsetsGeometry.only(top: 4, bottom: 4),
-                          child: Container(
-                            width: double.infinity,
-                            height: double.infinity,
-                            decoration: BoxDecoration(border: Border.all(width: 2)),
-                              child: Text(
-                                "Top 4",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsetsGeometry.all(4),
-                          child: Container(
-                            width: 175,
-                            height: double.infinity,
-                            decoration: BoxDecoration(border: Border.all(width: 2)),
+                          child: Center(
                             child: Text(
-                              "Top 3",
+                              "Top 3 Song",
                               style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 8),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Top 2 Song",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 8),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Top 4 Song",
+                              style: TextStyle(
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -98,26 +122,142 @@ class MusicList extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-            SizedBox(height: 8),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(left: 8, right: 8),
+              SizedBox(height: 8),
+              Expanded(
                 child: Container(
-                  color: Colors.blue,
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 2),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Expanded(
+                        child: Center(
+                          child: Text(
+                            "Top 5 Songs",
+                            style: TextStyle(
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.only(left: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "5",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.only(left: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
+                            )
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "6",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.only(left: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
+                            )
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "7",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.only(left: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(width: 2),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(6),
+                            )
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "8",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 8),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(left: 8, right: 8, bottom: 8),
+              SizedBox(height: 8),
+              Expanded(
                 child: Container(
-                  color: Colors.blue,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Top 99 Songs",
+                      style: TextStyle(
+                        fontSize: 24,
+                      ),
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
